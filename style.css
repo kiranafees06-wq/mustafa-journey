@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.container {
+  background-image: url(./image/lower.png);
+  z-index: -2;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.upper {
+  background-image: url(./image/upper.png);
+  /* background-image: url(./image/tt.png); */
+  background-size: cover;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.upper #font {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.upper .box {
+  border: 2px solid silver;
+  border-radius: 4px;
+  padding: 0.1rem;
+  width: 7rem;           
+  min-width: 7rem;       
+  max-width: 7rem;       
+  overflow: hidden;      
+  white-space: nowrap;   
+  font-size: clamp(8px, 2vw, 14px); 
+  background-color: rgba(144, 170, 240, 0.2);
+}
+.dates {
+  display: flex;
+  gap: 0.5rem;
+  padding: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dates .box1 {
+  background-color: rgba(52, 152, 219, 0.3);
+}
+
+.dates .box2 {
+  background-color: rgba(241, 196, 15, 0.3);
+}
+
+.dates .box3 {
+  background-color: rgba(46, 204, 113, 0.3);
+}
+
+.dates .box4 {
+  background-color: rgba(231, 76, 60, 0.3);
+}
+
+.dates .down {
+    background-color: rgba(26, 22, 3, 0.2);
+    border-radius: 5px;
+    border: 1px solid silver;
+}
+h3 {
+  color: rgb(52, 152, 219);
+  padding-top: 0;
+  margin-top: 0;
+}
+h1 {
+     color: rgb(11, 58, 90);
+     margin: 0 , auto;
+
+}
+
+.birth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(144, 170, 240, 0.2);
+  width: fit-content;
+  border: 2px solid silver;
+  border-radius: 3px;
+}
+
+.footer {
+  border: 2px solid silver;
+  border-radius: 4px;
+  padding: 0.2rem;
+  width: fit-content;
+  background-color: rgba(144, 170, 240, 0.2);
+}
+
+#second {
+     font-variant-numeric: tabular-nums;
+  min-width: 4rem; 
+  display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+    h1 {
+         font-size: 30px; 
+        }
+  }
