@@ -53,8 +53,8 @@ body {
   min-width: 7rem;       
   max-width: 7rem;       
   overflow: hidden;      
-  white-space: nowrap;   
-  font-size: clamp(8px, 2vw, 14px); 
+  white-space: nowrap;
+  font-size: 14px;
   background-color: rgba(144, 170, 240, 0.2);
 }
 .dates {
@@ -64,6 +64,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.dates.box (
+  width: 45%;
 
 .dates .box1 {
   background-color: rgba(52, 152, 219, 0.3);
